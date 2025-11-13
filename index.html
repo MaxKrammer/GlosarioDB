@@ -1,28 +1,46 @@
-
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Glosario de Bases de Datos</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-      body {
-        font-family: 'Inter', sans-serif;
-      }
-      @import url('https://rsms.me/inter/inter.css');
-    </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-    "react/": "https://aistudiocdn.com/react@^19.2.0/",
-    "react": "https://aistudiocdn.com/react@^19.2.0"
-  }
-}
-</script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 </head>
-  <body class="bg-slate-900 text-slate-200">
-    <div id="root"></div>
-  </body>
+<body>
+    <div id="app-container">
+        <header class="app-header">
+            <div class="logo-container">
+                <svg class="logo-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7a8 8 0 0116 0M12 21a8 8 0 000-14 8 8 0 000 14z"/></svg>
+                <h1 class="app-title">Glosario de Bases de Datos</h1>
+            </div>
+            <nav class="app-nav">
+                <button id="btn-glossary" class="nav-button active">Glosario</button>
+                <button id="btn-quiz" class="nav-button">Evaluar Conocimiento</button>
+            </nav>
+        </header>
+
+        <main id="glossary-view" class="view active">
+            <!-- El contenido del glosario se generará aquí -->
+        </main>
+
+        <main id="quiz-view" class="view">
+            <div class="quiz-intro">
+                <h2 class="quiz-title">¡Pon a Prueba tus Conocimientos!</h2>
+                <p class="quiz-subtitle">
+                    Arrastra cada término a su definición correcta. Es una forma divertida y rápida de comprobar lo que has aprendido.
+                </p>
+            </div>
+            <div id="quiz-container">
+                <!-- El contenido del cuestionario se generará aquí -->
+            </div>
+        </main>
+
+        <footer class="app-footer">
+            <p>&copy; 2024 Glosario Interactivo. Creado con fines educativos.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
 </html>
