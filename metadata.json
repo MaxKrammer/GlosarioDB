@@ -1,0 +1,5 @@
+{
+  "name": "Glosario de Bases de Datos",
+  "description": "Una aplicación web interactiva para aprender y evaluar conocimientos sobre terminología de bases de datos, con un glosario detallado y un ejercicio de arrastrar y soltar.",
+  "requestFramePermissions": []
+}
